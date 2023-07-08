@@ -1,0 +1,175 @@
+.footer {
+    display: block;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    background: rgba(0, 0, 0, 0.8);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer__left-box {
+        display: flex;
+        width: 100%;
+        max-width: 550px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: 10px;
+
+        .footer__left__list-left {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            margin-bottom: 30px;
+
+            .footer__left__item-left {
+                &:nth-child(3) {
+                    position: relative;
+                    padding-left: 40px;
+
+                    &::before {
+                        position: absolute;
+                        width: 31px;
+                        height: 31px;
+                        top: 20px;
+                        left: 0;
+                        display: inline-block;
+                        background-image: url("../../assets/image/phone.svg");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        content: "";
+                    }
+                }
+
+                .logo {
+                    display: block;
+                    margin-bottom: 30px;
+                }
+
+                .footer__left__item-left__info {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 20px;
+                    padding: 0;
+                    font-size: 15px;
+                    color: #9b9b9b;
+                }
+
+                .footer__left__item-left__tel {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 8px;
+                    padding: 0;
+                    font-size: 22px;
+                    color: #fff;
+                }
+
+                .footer__left__item-left__text {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #e6af5d;
+                }
+            }
+        }
+    }
+
+    .footer__right-box {
+        display: flex;
+        width: 100%;
+        max-width: 550px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer__right__list-right {
+            display: block;
+            width: 100%;
+            max-width: 240px;
+            margin-bottom: 20px;
+
+            .footer__right__item-right+.footer__right__item-right {
+                margin-top: 5px;
+            }
+
+            .footer__right__item-right {
+                .footer__right__item-right__heading {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 30px;
+                    padding: 0;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #fff;
+                }
+
+                .footer__right__item-right__text {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 15px;
+                    color: #9b9b9b;
+                }
+
+                .footer__right__item-right__link {
+                    display: block;
+                    margin: 0;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    padding: 0;
+                    font-size: 15px;
+                    color: #9b9b9b;
+
+                    &:hover {
+                        color: #e6af5d;
+                    }
+                }
+            }
+        }
+
+        .footer__form-box {
+            display: block;
+            width: 240px;
+
+            .footer__form__title {
+                margin-bottom: 40px;
+                font-size: 18px;
+                color: #cccccc;
+            }
+
+            .footer__input-name {
+                display: block;
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 10px;
+                font-size: 14px;
+                border: 2px solid #0000003d;
+                border-radius: 10px;
+
+                &:focus {
+                    border: none;
+                    outline: 2px solid #e6af5d;
+                }
+            }
+
+            .footer__form-btn {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 10px;
+                color: #202020;
+                font-weight: bold;
+                font-size: 16px;
+                background: #fff;
+                border: 1px solid #000;
+                border-radius: 15px;
+
+                &:hover {
+                    background: #e6af5d;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

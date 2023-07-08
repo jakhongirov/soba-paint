@@ -1,0 +1,105 @@
+.awards {
+    margin-bottom: 50px;
+
+    .awards__title {
+        display: block;
+        margin: 0;
+        margin-bottom: 22px;
+        text-align: center;
+        font-size: 13px;
+        color: #e6af5d;
+    }
+
+    .awards__headding {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        font-family: "Marcellus";
+        text-align: center;
+        font-size: 52px;
+        font-weight: 400;
+        color: #332f2c;
+    }
+
+    .awards__list {
+        .awards__item {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 40px 0px;
+            flex-wrap: wrap;
+            border-top: 1px solid #a19d9d5d;
+            align-items: center;
+
+            &:last-child {
+                border-bottom: 1px solid #a19d9d5d;
+            }
+
+            .awards__item__date {
+                display: inline-block;
+                margin-bottom: 10px;
+                padding: 0;
+                font-family: "Marcellus" sans-serif;
+                font-size: 25px;
+                color: #e6af5d;
+            }
+
+            .awards__item__title {
+                display: block;
+                margin-bottom: 10px;
+                padding: 0;
+                font-family: "Marcellus" sans-serif;
+                font-size: 25px;
+                font-weight: 400;
+                color: #332f2c;
+            }
+
+            .awards__item__desc {
+                display: block;
+                width: 100%;
+                max-width: 500px;
+                margin-bottom: 10px;
+                padding: 0;
+                font-family: "Hnice", sans-serif;
+                font-size: 15px;
+                color: #8d9396;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .awards__item__arrow {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 840px) {
+        .awards__list {
+            .awards__item {
+                flex-direction: column;
+
+                .awards__item__date{
+                    text-align: center;
+                }
+
+                .awards__item__title{
+                    text-align: center;
+                }
+
+                .awards__item__desc{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .awards__headding {
+            font-size: 36px;
+        }
+    }
+}
